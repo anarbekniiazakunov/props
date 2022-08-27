@@ -1,28 +1,26 @@
-import Header from './components/Header'
+import Box from './components/Box'
 import './App.css';
 
 function App() {
-  const element = {principal:"blue"}
-  const nameUsers =[ " Zama", " Dada","Meerim"]
+ 
   return (
     <div className="App">
       <header className="App-header">
-        {
-          nameUsers.map((user) =><Header nameUser={user} greeting=' good bye' tacos=' beans' Color={element} />)
-        }
-        {/* <Header 
-        nameUser=" Zama" 
-        greeting=' good bye'
-        tacos=' beans'
-        Color={element}
-        />
-        <Header 
-        nameUser=" Dada" 
-        greeting=' good bye'
-        tacos=' beans'
-        Color={element}
-        /> */}
-        
+      <div className="container">
+
+        <Box text="im a box 1"
+        backgroundColor="red"
+        textClass="boldText"/>
+
+        <Box text="im a box 2"
+        backgroundColor="blue"
+        textClass="smallText"/>
+
+        <Box text="im a box 3"
+        backgroundColor="green"
+        textClass="italicText"/>
+
+      </div>
       </header>
     </div>
   );
